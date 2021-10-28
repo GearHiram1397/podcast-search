@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  background: hsl(224, 35%, 11%);
+  background-image: url("./desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: 45em;
+  background-position-x: 500px;
+  background-position-y: 85px;
+}
+
+.dot-container {
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 60%;
+  margin-left: 40px;
+  min-height: 500px;
+}
+
+header {
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.container {
+  margin-top: 40px;
+  min-width: 800px;
+  background: #121725;
+  min-height: 580px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+#logo {
+  height: 100%;
+  width: 75px;
+}
+
+.title {
+  color: #54e6af;
+  margin-top: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  color: #c2cbe5;
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.search-input-label {
+  color: #c2cbe5;
+  font-weight: 100;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+input#search-input {
+  background: #2c344b;
+  color: #eeeeee;
+  display: block;
+  width: 100%;
+  font-size: 0.55em;
+  max-width: 500px;
+  line-height: 2em;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.search-results {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  margin-left: 15px;
+  min-height: 200px;
+  margin-top: 20px;
+  max-width: 175px;
+  min-width: 175px;
+}
+
+.card-img {
+  background: #54e6af;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.podcast-pic {
+  width: 100%;
+  height: inherit;
+}
+
+.card h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card h3 {
+  color: #a3acc4;
+  font-size: 0.8em;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  background: #54e6af;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.6em;
+  border-radius: 30px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+#dots {
+  margin-left: 60em;
+  margin-top: -85%;
+  position: absolute;
+  bottom: -110px;
+}
+/*
+
+T
+*/
+
+/*
+=============================================== 01. BASE STYLES (1140px) ===============================================
+*/
+
+/*
+=============================================== 01.5. #DESKTOP wide (1139+++px) ===============================================
+*/
+
+@media only screen and (min-width: 1139px) {
+}
+
+/*
+=============================================== 02. #DESKTOP (960px) ===============================================
+*/
+/* Note: Design for a width of 960px */
+@media only screen and (min-width: 959px) and (max-width: 1140px) {
+}
+
+/*
+=============================================== 03. #Tablet (Portrait) ===============================================
+*/
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/*
+=============================================== 04. #Mobile (Portrait) ===============================================
+*/
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+  main {
+    width: 94%;
+    min-height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container {
+    padding: 0%;
+  }
+  input#search-input {
+    max-width: 350px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .search-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  #dots {
+    display: none;
+  }
+
+  .footer-container {
+    display: none;
+  }
+}
+
+/*
+=============================================== 05. #Mobile (Landscape) ===============================================
+*/
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
