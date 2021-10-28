@@ -39,6 +39,7 @@ header {
   min-height: 580px;
   padding: 10px;
   margin-right: 50px;
+  max-width: 800px;
 }
 
 #logo {
@@ -163,8 +164,7 @@ input#search-input {
 #dots {
   margin-left: 60em;
   margin-top: -85%;
-  position: absolute;
-  bottom: -110px;
+  margin-bottom: 50px;
 }
 /*
 
@@ -203,8 +203,15 @@ T
 /* Note: Design for a width of 320px */
 
 @media only screen and (max-width: 767px) {
+  body {
+    font-family: "Chivo", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    background: hsl(224, 35%, 11%);
+  }
+
   main {
-    width: 94%;
+    width: 50%;
     min-height: 500px;
     margin-right: auto;
     margin-left: auto;
